@@ -8,7 +8,17 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Restaurant Rating Prediction Model</title>
 </head>
-
+{% if result %}
+<style>
+.visual{
+  /* margin-left:-21.2%;   */
+   margin-top: -1.1%;} 
+  .visual h4{
+    margin-top: 1rem;
+  }
+  
+  </style>
+{% endif %}
 <body>
     <h1>Restaurant Rating Prediction</h1>
     <div class="block"><br>
@@ -2967,32 +2977,29 @@
     </div>
     {% if result %}
         <h3>Your Restaurant Rating : {{ result.0|floatformat:1 }}</h3>
-        <div class="box">
+        <div class="box" style="display: flex;">
         {% if result == 1 %}
         <i class='bx bxs-star' ></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i>
         {% elif result == 2 %}
-        <i class='bx bxs-star' ><i class='bx bxs-star' ></i><i class='bx bx-star'><i class='bx bx-star'><i class='bx bx-star'></i>
+        <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i>
         {% elif result == 3 %}
-        <i class='bx bxs-star' ><i class='bx bxs-star' ><i class='bx bxs-star' ></i><i class='bx bx-star'><i class='bx bx-star'></i>
+        <i class='bx bxs-star' ></i><i class='bx bxs-star' ><i class='bx bxs-star' ></i><i class='bx bx-star'><i class='bx bx-star'></i>
         {% elif result == 4 %}
-        <i class='bx bxs-star' ><i class='bx bxs-star' ><i class='bx bxs-star' ><i class='bx bxs-star' ></i><i class='bx bx-star'></i>
+        <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bx-star'></i>
         {% elif result == 5 %}
-        <i class='bx bxs-star' ><i class='bx bxs-star' ><i class='bx bxs-star' ><i class='bx bxs-star' ><i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i>
         {% elif result > 1 and result < 2 %}
-        <i class='bx bxs-star' ></i><i class='bx bxs-star-half'></i><i class='bx bx-star'><i class='bx bx-star'><i class='bx bx-star'></i>
+        <i class='bx bxs-star' ></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i>
         {% elif result > 2 and result < 3 %}
-        <i class='bx bxs-star' ><i class='bx bxs-star' ></i><i class='bx bxs-star-half'></i><i class='bx bx-star'><i class='bx bx-star'></i>
+        <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i><i class='bx bx-star'></i>
         {% elif result > 3 and result < 4 %}
         <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i>
         
         {% else %}
         <i class='bx bxs-star' ><i class='bx bxs-star' ><i class='bx bxs-star' ><i class='bx bxs-star' ></i><i class='bx bxs-star-half'></i>
          {% endif %}<br>
-        </box>
+        </div>
     {% endif %}
-
-
-
     <div class="visual">
       <h4>Data Insights</h4>
      <div class="d">
