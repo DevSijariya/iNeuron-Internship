@@ -57,14 +57,15 @@ h3{
 .box{
     margin-top:-20px;
     margin-left: 400px;
+    
+    
 }
 i{
     /* margin-left: 350px; */
     font-size: 3rem;
+  
 }
 .visual{
-    margin-left:-27.2%;
-    margin-top: -2%;
     height: 1800px;
     width: 1900px;
     background-image: url('bg.jpg');
@@ -75,8 +76,9 @@ i{
     margin-left:40%;
     font-size: 4rem;
     padding-top:4rem;
-    margin-top: 1rem;
+    
 }
 /* .d .col1 img{
     margin-left:100px;
 } */
+
