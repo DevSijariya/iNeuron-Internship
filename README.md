@@ -12,8 +12,7 @@ Results: You have to build a solution that should able to predict the ratings of
 restaurants listed in the dataset.
 
 Dataset:
-Dataset Link: - Link
-
+Dataset Link: - https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-restaurants
 Project Evaluation metrics:
 Code:
 
